@@ -32,3 +32,7 @@ body{background: #EDEFF4;font-family:  'Julius Sans One', sans-serif;}
     transition:text-shadow 0.5s ease-in;  
 }
 .caption a:hover{text-decoration: none; text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87}
+@media (max-width:767px){
+	.project-item{min-height: 200px !important;}
+	.thumbnails img{display: none;}
+}	
