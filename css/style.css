@@ -21,7 +21,7 @@ body{background: #EDEFF4;font-family:  'Julius Sans One', sans-serif;}
 	background: white;
 	background: rgba(0, 0, 0, 0.1);
 }
-.project-lang{font-size: 12px;}
+.project-lang{font-size: 12px;position: absolute;}
 .caption a{
 	display: block;
 	color:#000;
