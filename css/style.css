@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
-body{background: #EDEFF4;font-family:  'Julius Sans One', sans-serif;}
+body{background: url(../img/plumber.jpg) 400px 0 no-repeat;font-family:  'Julius Sans One', sans-serif;}
 #main{margin-top: 70px;}
 .caption{background: #fff;}
 .project-item{
@@ -32,7 +32,41 @@ body{background: #EDEFF4;font-family:  'Julius Sans One', sans-serif;}
     transition:text-shadow 0.5s ease-in;  
 }
 .caption a:hover{text-decoration: none; text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87}
+.thumbnail img:hover {
+	-moz-animation-name: glow;
+    -moz-animation-duration: .8s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+
+    -webkit-animation-name: glow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+
+    animation-name: glow;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@-moz-keyframes glow {
+    from { box-shadow: 0 0 5px #333; }
+    to   { box-shadow: 0 0 20px #046; }
+}
+@-webkit-keyframes glow {
+    from { -webkit-box-shadow: 0 0 5px #333; }
+    to   { -webkit-box-shadow: 0 0 20px #046; }
+}
+@keyframes glow {
+    from { box-shadow: 0 0 5px #333; }
+    to   { box-shadow: 0 0 20px #046; }
+}
 @media (max-width:767px){
 	.project-item{min-height: 200px !important;}
 	.thumbnails img{display: none;}
 }	
+@media (max-width: 979px){
+	body{background-position: 0px 0px;}
+}
